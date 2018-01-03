@@ -4,11 +4,6 @@ from flask import render_template, redirect, url_for, current_app, request, flas
 from . import views
 
 
-@views.route('/')
-def index():
-    return render_template('views/home.html')
-
-
 def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1] in current_app.config['ALLOWED_EXTENSIONS']

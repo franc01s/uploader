@@ -1,6 +1,7 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 
 {% block content %}
+<div class="container">
     <div class="withmarge">
         <h2>UPLOAD</h2>
         <form id="my-awesome-dropzone" class="dropzone" method="post">
@@ -39,6 +40,7 @@
             </div>
         </form>
     </div>
+</div>
 {% endblock %}
 
 {% block scripts %}

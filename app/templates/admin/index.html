@@ -1,0 +1,25 @@
+{% extends 'admin/master.html' %}
+{% block head_tail %}
+{{ super() }}
+<link href="{{ url_for('static', filename='layout.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block main_menu %}
+{{super()}}
+
+<ul class="nav navbar-nav">
+    <li>
+        <a href="{{url_for('views.upload')}}">Upload</a>
+    </li>
+</ul>
+{% endblock %}
+
+{% block body %}
+{{ super() }}
+<div class="container-fluid">
+    <h2>Swissmap upload/download</h2>
+    <p class="lead">
+        Upload/Download file for Swissmap
+    </p>
+</div>
+{% endblock body %}
