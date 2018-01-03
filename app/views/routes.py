@@ -34,7 +34,3 @@ def upload():
     else:
         return render_template('views/upload.html')
 
-
-@views.route('/download/<path:filename>', methods=['GET'])
-def download(filename):
-    return send_from_directory(directory= current_app.config['UPLOAD_FOLDER'], filename=filename)

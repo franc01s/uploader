@@ -1,6 +1,6 @@
 # Uploader
 
-Upload gpx file and retrieved them via http://swissmap.egger.cloud/download/track.gpx
+Upload gpx file and retrieve it from app online tracks on http://site.org/myfileadmin/download/track.gpx
 
 ---
 ```
